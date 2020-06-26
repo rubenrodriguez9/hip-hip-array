@@ -1,7 +1,9 @@
 /* This assignment will give you some practice with creating arrays and using their methods. */
 
 /* Please note that his is NOT a function-based challenge (aside from your challenge banner function). Everything should be in the global scope--this means you will benefit from using `for` loops instead of `while`. */
-
+function challengeBanner(x){
+  console.log(`*************** Challenge ${x} ****************`)
+}
 
 // Challenge 0
 //
@@ -28,23 +30,60 @@ const students = [
   'Tyrell',
   'Wilson',
 ];
+function span(arr){
+  let i;
+  for(i = 0;i < arr.length; i++){
+    console.log(arr[i])
+  }
+}
 
-
+span(students)
+console.log('')
+challengeBanner(1)
+console.log('')
 // Challenge 2
 // Loop through the following array BACKWARDS, console.logging out each value. 64 should be first and 100 last.
 const grades = [100, 80, 110, 75, 83, 64];
 
-
+function backwardo(arr){
+  let i;
+  for(i = arr.length - 1;i >= 0;i--){
+    console.log(arr[i])
+  }
+}
+backwardo(grades)
+console.log('')
+challengeBanner(2)
+console.log('')
 // Challenge 3
 // Console.log out only the even numbers in the following array.
 const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
+function evenNumbers(arr){
+  let i;
+  for(i = 0;i < arr.length;i++)
+  if(arr[i] % 2 === 0){
+    console.log(arr[i])
+  }
+}
 
-
+evenNumbers(positiveNumbers)
+console.log('')
+challengeBanner(3)
+console.log('')
 // Challenge 4
 // Console.log out the even numbers in the following array, INCLUDING the negative ones. There should be four of them!
 const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
-
-
+function evenAndNeg(arr){
+  let i;
+  for(i = 0;i < arr.length;i++)
+  if(arr[i] % 2 === 0 || arr[i] < 0){
+    console.log(arr[i])
+  }
+}
+evenAndNeg(mixedSignNumbers)
+console.log('')
+challengeBanner(4)
+console.log('')
 // Challenge 5
 // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
 const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
