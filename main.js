@@ -87,25 +87,71 @@ console.log('')
 // Challenge 5
 // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
 const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
-
-
+symmetricalCapitals.shift();
+symmetricalCapitals.shift();
+function loggem(arr){
+  let i;
+  for(i = 0;i < arr.length - 1; i++){
+    console.log(arr[i])
+  }
+}
+loggem(symmetricalCapitals)
+console.log('')
+challengeBanner(5)
+console.log('')
 // Challenge 6
 // Add a value (your choice!) to the start of the following array and two values (of your choice) to the end simply by adding them in the following line, and then console.log out each value individually.
 const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
 
+fibonacciNumbers.unshift(.5)
+fibonacciNumbers.push(26)
+fibonacciNumbers.push(52)
 
+function logged(arr){
+  let i;
+  for(i = 0;i < arr.length; i++){
+    console.log(arr[i])
+  }
+}
+
+logged(fibonacciNumbers)
+console.log('')
+challengeBanner(6)
+console.log('')
 // Challenge 7
 // Make a NEW array with 5 values of your choice, using the same syntax as the arrays from the previous 6 challenges, that is, every value should be placed within the square brackets.  Now console.log out each value individually.
+let thingsILike = ['Cowboy Bebop', 'Lucy', 'Ninja Scroll', 'The Matrix', 'Firefly']
 
-
+logged(thingsILike)
+console.log('')
+challengeBanner(7)
+console.log('')
 // Challenge 8
 // Make a new EMPTY array and fill it with five values of your choice using BOTH .push AND .unshift, and then console.log out each value individually.
+let otherThingsILike =[];
+otherThingsILike.push('Fist of The North Star');
+otherThingsILike.push('Akira');
+otherThingsILike.push('Battlestar Galactica');
+otherThingsILike.push('See');
+otherThingsILike.push('Nehruvian Doom');
 
-
+logged(otherThingsILike)
+console.log('')
+challengeBanner(8)
+console.log('')
 // Challenge 9
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
+function looped(arr){
+  let i;
+  for(i = 3;i <= 10; i++){
+    console.log(arr[i])
+  }
+}
 
-
+looped(students)
+console.log('')
+challengeBanner(9)
+console.log('')
 // Challenge 10
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy indivudally.
 
