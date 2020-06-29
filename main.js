@@ -160,14 +160,21 @@ challengeBanner(9)
 // Challenge 10
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy indivudally.
 let mimic = []
-function copy(arr){
 
 let i;
-for(i = 4;i < 11; i++){
-  
-}
+for(i = 3;i < 11; i++){
+  mimic.push(students[i]);
 }
 
+
+console.log(mimic)
+
+
+
+
+console.log('')
+challengeBanner(10)
+console.log('')
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the two arrays are the same, because `slice` does NOT modify the original array.
 let studentsCopy = students.slice(3, 11)
